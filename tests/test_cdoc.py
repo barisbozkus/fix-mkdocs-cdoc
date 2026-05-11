@@ -1361,7 +1361,7 @@ class TestRenderingFixes:
 
         raw = "/**\n * Hello world.\n * \n */"
         result = clean_comment(raw)
-        assert result == "Hello World."
+        assert result == "Hello world."
         assert "*/" not in result
 
     def test_comment_no_lone_star(self):
