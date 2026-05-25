@@ -34,6 +34,7 @@ jobs:
       run: |
         flake8 mkdocs_cdoc/
         mypy --ignore-missing-imports mkdocs_cdoc/
+        pylint mkdocs_cdoc/
 
     - name: Step 3 & 4 - Unit tests and Coverage report
       run: |
